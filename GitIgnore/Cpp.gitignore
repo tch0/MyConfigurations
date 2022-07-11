@@ -1,3 +1,5 @@
+# https://github.com/tch0/MyConfigurations/blob/master/GitIgnore/Cpp.gitignore
+
 # all files ignored, for all generated binary files
 *
 

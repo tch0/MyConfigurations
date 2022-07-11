@@ -1,3 +1,5 @@
+# https://github.com/tch0/MyConfigurations/blob/master/MakefileTemplate/CppTemplate2.mk
+
 # Makefile template 2:
 # For multiple C++ files in one directory, compile into one executable.
 

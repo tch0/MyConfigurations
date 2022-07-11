@@ -1,3 +1,5 @@
+# https://github.com/tch0/MyConfigurations/blob/master/MakefileTemplate/CppTemplate1.mk
+
 # Makefile template 1:
 # For C++ sigle files, every C++ file will get a executable.
 
