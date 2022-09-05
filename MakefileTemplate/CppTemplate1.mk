@@ -19,6 +19,7 @@ ifeq ($(debug), yes)
 CXXFLAGS += -g
 else
 CXXFLAGS += -O3
+CXXFLAGS += -DNDEBUG
 endif
 
 # filenames and targets
