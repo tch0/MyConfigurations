@@ -18,6 +18,8 @@
 !*.c
 !*.cpp
 !*.h
+!*.hpp
+!*.cc
 
 # track makefiles
 !Makefile

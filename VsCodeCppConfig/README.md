@@ -1,5 +1,12 @@
-# VsCode C++编译运行调试配置
+## VSCode C++通用编译运行调试配置
 
+通用编译调试配置：
+- `tasks.json`
+- `launch.json`
+- 使用环境变量中的`g++`进行编译，环境变量中的`gdb`进行调试。
+- Windows中和Linux均可使用。
+
+包含三个配置：
 - `gdb debug single file`
     - 使用`g++`编译调试单一文件。
 - `make and gdb debug single file`
