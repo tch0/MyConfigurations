@@ -29,13 +29,16 @@ endif
 
 # filenames and targets
 all_source_files := $(wildcard *.cpp)
+all_object_files := $(all_source_files:.cpp=.o)
 all_targets := $(target)
 
 # all targets
 all : $(all_targets)
 
 # compile
-$(all_targets) : $(all_source_files)
+%.o : %.cpp
+	$(CXX) $^ -o $@ $(CXXFLAGS) -c
+$(all_targets) : $(all_object_files)
 	$(CXX) $^ -o $@ $(CXXFLAGS)
 
 # run
@@ -52,4 +55,4 @@ endif
 
 # clean
 clean :
-	-$(RM) $(all_targets)
+	-$(RM) $(all_object_files) $(all_targets)
