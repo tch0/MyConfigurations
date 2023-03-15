@@ -7,3 +7,4 @@
 - [Vs Code C++编译运行调试环境配置](VsCodeCppConfig)
 - [Makefile 模板](MakefileTemplate)
 - [.gitignore文件模板](GitIgnore)
+- [CMake项目配置模板](CMakeTemplates)
