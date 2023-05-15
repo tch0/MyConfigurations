@@ -8,6 +8,7 @@
   - [项目配置](#%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE)
   - [文件树](#%E6%96%87%E4%BB%B6%E6%A0%91)
   - [其他资源](#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90)
+  - [通用模板](#%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -213,3 +214,16 @@ cmake --build .
 ## 其他资源
 
 - [CMake配置速查](https://github.com/tch0/MyCommandCheatSheet/blob/master/CMakeConfig.md)
+
+## 通用模板
+
+- 见[GenericTemplate.cmake](GenericTemplate.cmake)
+- 包含了所有常见功能，新创建项目时，拿过来稍加修改即可使用：
+    - 系统检测，并配置到头文件中（配合[SysConfig.h.in](SysConfig.h.in)使用）
+    - 输出目录定制
+    - 第三方库引入
+    - 编译器检测
+    - 通用编译警告选项，C++标准
+    - Unity Build
+    - 构建后的相关文件自动复制
+    - 从源文件列表、目录列表快速定义目标
