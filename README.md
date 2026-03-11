@@ -8,3 +8,4 @@
 - [Makefile 模板](MakefileTemplate)
 - [.gitignore文件模板](GitIgnore)
 - [CMake项目配置模板](CMakeTemplates)
+- [Clangd使用配置模板](ClangdConfig)
