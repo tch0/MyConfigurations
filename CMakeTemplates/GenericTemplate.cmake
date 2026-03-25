@@ -203,7 +203,7 @@ function(copy_dir_contents_to_target_file_dir target dirname source_dirs...)
             COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different ${source_dirs} $<TARGET_FILE_DIR:${target}>/${dirname} # copy_directory_if_different need cmake 3.26
             COMMAND_EXPAND_LISTS
         )
-    elseif()
+    else()
             add_custom_command(TARGET ${target} POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy_directory ${source_dirs} $<TARGET_FILE_DIR:${target}>/${dirname}
             COMMAND_EXPAND_LISTS
